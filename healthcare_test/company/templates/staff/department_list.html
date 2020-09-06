@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HealthCare</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+    {% block content %}
+    <h2>Department</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Department Name:</th>
+                <th>Manager Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dep in object_list %}
+            <tr>
+                <td>{{ dep.dname }} </td>
+                <td>{{ dep.manager }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endblock %}
+</body>
+
+</html>

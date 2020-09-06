@@ -1,0 +1,7 @@
+1. What command line interface instructions are required to create a django project called ‘company’ and application called ‘staff’?
+Ans: 
+    for creating project command is:
+        -> django-admin startproject company
+    for creating app:
+        -> cd company
+        -> python manage.py startapp staff
